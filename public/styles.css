@@ -1,0 +1,424 @@
+/* CSS RESET  */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: scroll;
+}
+
+/* END CSS RESET  */
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(assets/century-gothic-font/Century\ Gothic.ttf);
+}
+
+.top-message-banner {
+    background-color: #000;
+    padding: 11px 20px;
+}
+
+.top-message-banner .banner-text {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.navigation-bar {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    overflow-x: scroll;
+}
+
+.content .main-hero {
+    height: 549px;
+    background: #E2E2E2;
+    padding: 17px 20px;
+    overflow: hidden;
+}
+
+.content .main-hero .title {    
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.content .main-hero .sub-title {        
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #636363;
+    margin-bottom: 28px;
+}
+
+.content .main-hero .custom-button {
+    text-align: center;
+    height: 50.32258224487305px;
+    width: 260px;
+    border-radius: 10px;
+    padding-bottom: 22px;
+}
+
+.content .main-hero .custom-button .container {
+    margin: 0 auto;
+    height: 50.32258224487305px;
+    width: 260px;
+    border-radius: 10px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.content .main-hero .custom-button .container div {
+    margin-top: 12px;
+    margin-bottom: 19px;
+    margin-left: 57px;
+    margin-right: 57px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.content .main-hero .image-container {
+    text-align: center;
+} 
+
+.content .main-hero .image-container img {
+    width: 100%;
+    max-width: 457px;
+}
+
+.content .features {
+    max-height: 320px;
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    overflow-y: scroll;
+}
+
+.content .features::-webkit-scrollbar {
+    display: none;
+}
+
+.content .features .features-container {
+    width: max-content;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.content .features .features-container .item {
+    display: inline-block;
+    text-align: center;
+    max-width: 201px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.content .features .features-container .item img {
+    max-width: 74px;
+    margin-bottom: 20px;
+}
+
+.content .features .features-container .item .title {
+    margin-bottom: 9px;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+}
+
+.content .features .features-container .item .sub-title {
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #636363;
+}
+
+/* HEADER  */
+header {
+    position: sticky;
+    top: 0;
+}
+
+header .navigation-bar {
+    display: flex;
+    height: 42px;
+    padding: 18px;
+}
+
+header .navigation-bar .logo {
+    max-width: 145px;
+    height: max-content;
+}
+
+header .navigation-bar .container.left {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+header .navigation-bar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navigation-bar .container.center {
+    flex-grow: 2;
+}
+
+header .navigation-bar .container.right {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+header .navigation-bar .nav-icon {
+    max-height: 17px;
+}
+
+header .navigation-bar .nav-icon .icon {
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+}
+
+header .navigation-bar .nav-icon .icon.hamburguer {
+    width: 24px;
+}
+
+header .navigation-bar .nav-icon:first-child {
+    margin-right: 20px;
+}
+
+header .navbar-menu {
+    position: absolute;
+    width: 235px;
+    height: 100vh;
+    left: 0px;
+    top: 118px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 14px;
+    padding-left: 23px;
+    display: none;
+    z-index: 1;
+}
+
+header .navbar-menu.active {
+    display: block;
+}
+
+header .nav-icon .active-icon {
+    display: none;
+}
+
+header .nav-icon.active {
+    position: relative;
+}
+
+header .nav-icon.active .active-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+header .nav-icon.active .icon.hamburguer {
+    z-index: 2;
+}
+
+header .navbar-menu .item {
+    display: block;
+    font-family: Century Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    cursor: pointer;
+}
+/* END HEADER  */
+
+/* CATEGORIES */
+
+.content .categories .item {
+    height: 114px;
+    display: flex;
+    background: #F2F2F2;
+    padding: 18px;
+    margin-bottom: 5px;
+}
+
+.content .categories .item .description {
+    display: flex;
+    align-content: space-between;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    flex-grow: 2;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.content .categories .item .description p {
+    flex: 1;
+}
+
+.content .categories .item .description .icon {
+    width: 8px;
+    height: 19px;
+}
+
+.content .categories .item .image-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+}
+
+.content .categories .item .image-container .picture {
+    height: 90%;
+}
+
+/* END CATEGORIES  */
+
+/* HELPERS  */
+.vertical-spacer {
+    display: block;
+    height: 40px;
+}
+
+/* END HELPERS  */
